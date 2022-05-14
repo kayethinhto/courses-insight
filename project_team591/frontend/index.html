@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HTML 5 Boilerplate</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<form id="search">
+	<label for="title">Title</label><br>
+	<input type="text" id="title" name="title" value=""><br>
+	<input type="submit" value="Submit">
+</form>
+<br />
+<form id="rooms">
+	<label for="capacity">Minimum Capacity</label><br>
+	<input type="text" id="capacity" name="capacity" value=""><br>
+	<label for="furniture">Furniture</label><br>
+	<select name="furniture" id="furniture">
+		<option value="Classroom-Fixed Tables/Movable Chairs">Classroom-Fixed Tables/Movable Chairs</option>
+		<option value="Classroom-Movable Tables & Chairs">Classroom-Movable Tables & Chairs</option>
+		<option value="Classroom-Moveable Tables & Chairs">Classroom-Moveable Tables & Chairs</option>
+		<option value="Classroom-Moveable Tablets">Classroom-Moveable Tablets</option>
+		<option value="Classroom-Fixed Tablets">Classroom-Fixed Tablets</option>
+		<option value="Classroom-Fixed Tables/Fixed Chairs">Classroom-Fixed Tables/Fixed Chairs</option>
+		<option value="Classroom-Fixed Tables/Moveable Chairs">Classroom-Fixed Tables/Moveable Chairs</option>
+		<option value="Classroom-Movable Tablets">Classroom-Movable Tablets</option>
+		<option value="Classroom-Hybrid Furniture">Classroom-Hybrid Furniture</option>
+		<option value="Classroom-Learn Lab">Classroom-Learn Lab</option>
+	</select>
+	<input type="submit" value="Submit">
+</form>
+<br />
+<div>
+	<canvas id="myChart" width="400" height="400"></canvas>
+</div>
+<br/>
+<br />
+<div id="roomsResult"></div>
+<script src="index.js"></script>
+</body>
+</html>
